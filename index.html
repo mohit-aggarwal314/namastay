@@ -70,6 +70,51 @@
             border-radius: 5px;
         }
 
+        .carousel-container {
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+            border-radius: 10px;
+        }
+
+        .carousel-slide {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .carousel-slide img {
+            width: 100%;
+            border-radius: 10px;
+            flex-shrink: 0;
+        }
+
+        .arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.5rem;
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            cursor: pointer;
+            border-radius: 50%;
+            z-index: 10;
+            transition: background 0.3s;
+        }
+
+        .arrow:hover {
+            background: rgba(0, 0, 0, 0.8);
+        }
+
+        .arrow.left {
+            left: 10px;
+        }
+
+        .arrow.right {
+            right: 10px;
+        }
+
         button.btn {
             color: #fff;
             border: 1px solid var(--themecolor);
@@ -320,7 +365,7 @@
         <div class="container">
             <div class="main-title text-center">
                 <span>KEY FEATURES</span>
-                <h2>Namastey Homes: J-BLOCK 203 GROUND FLOOR, Saket New Delhi 110017 IN</h2>
+                <h2>Namastey Homes</h2>
             </div>
             <div class="row mt-4 align-items-center">
                 <div class="col-lg-6 owl-carousel owl-three owl-carousel owl-theme">
@@ -342,88 +387,39 @@
                 </div>
                 <div class="col-lg-6 align-items-center d-flex mt-lg-0 mt-4">
                     <div>
-                        <h3>MODERN SPACES IN THE GROWTH CORRIDOR OF DELHI</h3>
+                        <p>
+                            Namastey Homes is one of the top choices to experience Royalty and Luxury at our Service
+                            Apartments.
+                            Perfect place for Families as well as Corporate Stays.
+                            Find the best service apartments in South Delhi for rent, long stay, short stay, and more.
+                        </p>
                         <ul>
-                            <li>Last Few Units Left</li>
-                            <li>Project Nearing Completion</li>
-                            <li>Modern Clubhouse With Premium Amenities.</li>
-                            <li>Secure Gated Community.</li>
-                            <li>Proximity To Schools And Healthcare Facilities.</li>
-                            <li>Double Heighted Lobbies</li>
-                            <li>External Paintwork Started</li>
-                            <li>Luxurious Club House With All Amenities</li>
-                            <li>Four towers, 39 floors, vast green surroundings.</li>
-                            <li>Visitor and dedicated parking slots.</li>
-                            <li>Direct access to 25-acre DDA park.</li>
-                            <li>Lavish 45,000 sq. ft. 5-star clubhouse.</li>
-                            <li>Two parks, a gated community.</li>
-                            <li>2, 3, and 4 BHK apartments.</li>
-                            <li>Modern amenities, 70% open space.</li>
+                            <li>Service Apartments In South Delhi For Rent</li>
+                            <li>Service Apartments In South Delhi For Short Stay</li>
+                            <li>Service Apartments In South Delhi Near Airport</li>
+                            <li>Service Apartments In South Delhi For Long Stay</li>
+                            <li>Service Apartments Near Aiims Delhi</li>
+                            <li>Budget Service Apartments In Delhi</li>
+                            <li>Best Service Apartments In South Delhi</li>
+                            <li>2 BHK Service Apartments In South Delhi</li>
+                            <li>1 BHK Service Apartments In South Delhi</li>
+                            <li>Serviced Apartments In Defence Colony South Delhi</li>
+                            <li>Service Apartments In Saket Delhi</li>
+                            <li>Service Apartments In GK 1 South Delhi</li>
+                            <li>Service Apartments In Hauz Khas South Delhi</li>
+                            <li>Luxury Service Apartments In South Delhi</li>
+
                         </ul>
+                        <a href="https://www.namasteyhomes.in/" class="btn btn-dark mt-3">Learn More</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
     <!-- end -->
 
-    <!-- price -->
-    <section id="price">
-        <div class="container">
-            <div class="main-title text-center">
-                <span>Unit Price</span>
-                <h2>Namastey Homes: J-BLOCK 203 GROUND FLOOR, Saket New Delhi 110017 IN</h2>
-            </div>
-            <div class="row mt-5">
-                <div class="col-lg-10 m-auto p-0">
-                    <div class="table-responsive">
-                        <table class="table table-hover">
-                            <thead>
-                                <tr>
-                                    <th>Configuration</th>
-                                    <th>Area</th>
-                                    <th>Price</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>2 BHK</td>
-                                    <td>1755 Sq.Ft.</td>
-                                    <td>
-                                        <button type="button" class="btn" data-toggle="modal" data-target="#onload-form"
-                                            data-backdrop="static" data-keyboard="false">
-                                            ₹ 4 Cr* Onwards
-                                        </button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>3 BHK + Servant</td>
-                                    <td>2280 - 2350 Sq.Ft.</td>
-                                    <td>
-                                        <button type="button" class="btn" data-toggle="modal" data-target="#onload-form"
-                                            data-backdrop="static" data-keyboard="false">
-                                            ₹ 6 Cr* Onwards
-                                        </button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>4 BHK + Servant</td>
-                                    <td>3030 Sq.Ft.</td>
-                                    <td>
-                                        <button type="button" class="btn" data-toggle="modal" data-target="#onload-form"
-                                            data-backdrop="static" data-keyboard="false">
-                                            ₹ 9 Cr* Onwards
-                                        </button>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- end -->
+
 
     <!-- gallery -->
     <section id="Gallery">
@@ -433,54 +429,56 @@
                 <h2>Our Serviced Apartments in South Delhi</h2>
             </div>
             <div class="row mt-5">
+                <!-- Slider 1 -->
                 <div class="col-lg-4 col-md-6 col-12 mb-4">
-                    <div class="img">
-                        <img src="img/gallery/g1.jpg" alt="" class="img-fluid">
-                    </div><br>
+                    <div class="carousel-container">
+                        <div class="carousel-slide">
+                            <img src="img/gallery/g1.jpg" alt="Slide 1">
+                            <img src="img/gallery/g1.jpg" alt="Slide 2">
+                            <img src="img/gallery/g1.jpg" alt="Slide 3">
+                        </div>
+                        <button class="arrow left">&#10094;</button>
+                        <button class="arrow right">&#10095;</button>
+                    </div>
+                    <br>
                     <h5>Stay in South Delhi, Near Max Hospital</h5>
                     <button class="btn btn-outline-dark btncarerrrevers" data-toggle="modal" data-target="#onload-form"
                         data-backdrop="static" data-keyboard="false">1BHK – 80,000/ Month</button>
                 </div>
+
+                <!-- Slider 2 -->
                 <div class="col-lg-4 col-md-6 col-12 mb-4">
-                    <div class="img">
-                        <img src="img/gallery/g2.jpg" alt="" class="img-fluid">
-                    </div><br>
+                    <div class="carousel-container">
+                        <div class="carousel-slide">
+                            <img src="img/gallery/g2.jpg" alt="Slide 1">
+                            <img src="img/gallery/g2.jpg" alt="Slide 2">
+                            <img src="img/gallery/g2.jpg" alt="Slide 3">
+                        </div>
+                        <button class="arrow left">&#10094;</button>
+                        <button class="arrow right">&#10095;</button>
+                    </div>
+                    <br>
                     <h5>Fully Furnished Apartments, South Delhi</h5>
                     <button class="btn btn-outline-dark btncarerrrevers" data-toggle="modal" data-target="#onload-form"
                         data-backdrop="static" data-keyboard="false">2BHK – 1,40,000/ Month</button>
                 </div>
+
+                <!-- Slider 3 -->
                 <div class="col-lg-4 col-md-6 col-12 mb-4">
-                    <div class="img">
-                        <img src="img/gallery/g3.jpg" alt="" class="img-fluid">
-                    </div><br>
+                    <div class="carousel-container">
+                        <div class="carousel-slide">
+                            <img src="img/gallery/g3.jpg" alt="Slide 1">
+                            <img src="img/gallery/g3.jpg" alt="Slide 2">
+                            <img src="img/gallery/g3.jpg" alt="Slide 3">
+                        </div>
+                        <button class="arrow left">&#10094;</button>
+                        <button class="arrow right">&#10095;</button>
+                    </div>
+                    <br>
                     <h5>Luxury Fully Furnished Apartments, South Delhi</h5>
                     <button class="btn btn-outline-dark btncarerrrevers" data-toggle="modal" data-target="#onload-form"
                         data-backdrop="static" data-keyboard="false">3/4BHK – 2,00,000/ Month</button>
                 </div>
-                <!-- <div class="col-lg-4 col-md-6 col-12 mb-4">
-                    <div class="img">
-                        <img src="img/gallery/g5.jpg" alt="" class="img-fluid">
-                    </div><br>
-                    <h5>Stay in South Delhi, Near Max Hospital</h5>
-                    <button class="btn btn-outline-dark btncarerrrevers" data-toggle="modal" data-target="#onload-form"
-                        data-backdrop="static" data-keyboard="false">1BHK – 80,000/ Month</button>
-                </div>
-                <div class="col-lg-4 col-md-6 col-12 mb-4">
-                    <div class="img">
-                        <img src="img/gallery/g6.jpg" alt="" class="img-fluid">
-                    </div><br>
-                    <h5>Stay in South Delhi, Near Max Hospital</h5>
-                    <button class="btn btn-outline-dark btncarerrrevers" data-toggle="modal" data-target="#onload-form"
-                        data-backdrop="static" data-keyboard="false">1BHK – 80,000/ Month</button>
-                </div>
-                <div class="col-lg-4 col-md-6 col-12 mb-4">
-                    <div class="img">
-                        <img src="img/gallery/g7.jpg" alt="" class="img-fluid">
-                    </div><br>
-                    <h5>Stay in South Delhi, Near Max Hospital</h5>
-                    <button class="btn btn-outline-dark btncarerrrevers" data-toggle="modal" data-target="#onload-form"
-                        data-backdrop="static" data-keyboard="false">1BHK – 80,000/ Month</button>
-                </div> -->
             </div>
         </div>
     </section>
@@ -954,13 +952,10 @@
                             <!-- <div class="form-group">
                         <input type="text" name="query" class="form-control" placeholder="Message" />
                     </div> -->
-                            <div class="loan-form ">
-                                <label for="sw-checkbox-1" class="switch text">Loan Assistance Required?</label>
-                                <input id="checkInp" name="af2" class="switch-input" type="checkbox" value="yes" />
-                            </div>
+
                             <button type="submit" name="submit" id="sbmtFormBtn"
                                 class="btn btn-info micro-form-btn effetMoveGradient">
-                                Pre-Register Now
+                                Book Now
                             </button>
                             <div class="loan-form">
                                 <label for="sw-checkbox-1" class="switch text" style="font-size:10px;">I authorize
@@ -1307,12 +1302,9 @@
                         <!-- <div class="form-group">
                         <input type="text" name="query" class="form-control" placeholder="Message" />
                     </div> -->
-                        <div class="loan-form ">
-                            <label for="sw-checkbox-1" class="switch text">Loan Assistance Required?</label>
-                            <input id="sw-checkbox-1" name="af2" class="switch-input" type="checkbox" value="yes" />
-                        </div>
+
                         <button type="submit" name="submit" class="btn btn-info micro-form-btn effetMoveGradient">
-                            Pre-Register Now
+                            Book Now
                         </button>
                         <div class="loan-form">
                             <label for="sw-checkbox-1" class="switch text" style="font-size:10px;">I authorize company
@@ -1391,6 +1383,51 @@
 
             changeMobileInput("phone1", "country-code-1");
             changeMobileInput("phone2", "country-code-2");
+        });
+    </script>
+
+    <script>
+        document.querySelectorAll('.carousel-container').forEach(container => {
+            const track = container.querySelector('.carousel-slide');
+            const slides = container.querySelectorAll('img');
+            const prevBtn = container.querySelector('.arrow.left');
+            const nextBtn = container.querySelector('.arrow.right');
+            let index = 0;
+            let interval;
+
+            function moveCarousel() {
+                index++;
+                if (index >= slides.length) index = 0;
+                updateCarousel();
+            }
+
+            function updateCarousel() {
+                track.style.transform = `translateX(-${index * 100}%)`;
+            }
+
+            function startAutoSlide() {
+                interval = setInterval(moveCarousel, 2500);
+            }
+
+            function stopAutoSlide() {
+                clearInterval(interval);
+            }
+
+            prevBtn.addEventListener("click", () => {
+                stopAutoSlide();
+                index--;
+                if (index < 0) index = slides.length - 1;
+                updateCarousel();
+                startAutoSlide();
+            });
+
+            nextBtn.addEventListener("click", () => {
+                stopAutoSlide();
+                moveCarousel();
+                startAutoSlide();
+            });
+
+            startAutoSlide();
         });
     </script>
 </body>
