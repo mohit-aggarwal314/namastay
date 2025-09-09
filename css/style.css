@@ -492,6 +492,12 @@ header .navbar .navbar-nav .nav-item .nav-link:hover::before, header .navbar .na
   margin-top: 1rem;
 }
 
+@media (max-width: 768px) {
+    #home .overlay .info-box-border {
+        border: none;
+    }
+}
+
 #home .overlay h3 span::before {
   content: unset;
 }

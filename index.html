@@ -452,6 +452,27 @@
                 display: none !important;
             }
         }
+
+        .video-container {
+            width: 100%;
+            max-width: 1100px;
+            /* optional: same as your desktop width */
+            margin: 0 auto;
+        }
+
+        .video-container iframe {
+            width: 100%;
+            height: 600px;
+            /* desktop height */
+        }
+
+        /* Reduce height on mobile */
+        @media (max-width: 768px) {
+            .video-container iframe {
+                height: 300px;
+                /* mobile height */
+            }
+        }
     </style>
 
     <!-- overview  -->
@@ -751,8 +772,7 @@
                                     <h3 class="mt-2 font-xl text-center text-weight">Receive A Digital Copy Of Our
                                         Brochure
                                     </h3>
-                                    <h5 class="font-lg text-center text-weight ">And Learn More About Our Spacious
-                                        Residences
+                                    <h5 class="font-lg text-center text-weight ">And Learn More About Our SPACIOUS APARTMENTS
                                     </h5>
                                     <div class="cta-btn" style="text-align: center;">
                                         <button class="btn text-white btn-bg-color btn-width mt-2"
@@ -783,14 +803,13 @@
             </div>
             <div class="price-box">
                 <div class="row price-card-listing">
-
-                    <iframe width="1100" height="600"
-                        src="https://www.youtube.com/embed/YQHSmlXDGPU?si=1oKrP1LK72rid41b" title="YouTube video player"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/YQHSmlXDGPU?si=1oKrP1LK72rid41b"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                        </iframe>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1176,19 +1195,19 @@
     <!-- end -->
     <!-- floating buttons -->
     <div class="enquiry-wrapper">
-        <div class="enquiry-box" onclick="window.open('tel:+919958567091')">
+        <div class="enquiry-box" onclick="window.open('tel:+919990836740')">
             <div class="call-icon">
-                <img src="img/icons/phone.svg" alt="">
+                <img src="img/icons/2.svg" alt="">
                 <span class="mobvsisec">Call Now</span>
             </div>
             <div class="call-content">
-                <a href="tel:+919958567091">+91-9990836740</a>
+                <a href="tel:+919990836740">+91-9990836740</a>
             </div>
         </div>
         <div class="enquiry-box" data-toggle="modal" data-target="#onload-form" data-backdrop="static"
             data-keyboard="false">
             <div class="mail-icon">
-                <img src="img/icons/instagram.svg" alt="">
+                <img src="img/icons/1.svg" alt="">
                 <span class="mobvsisec">Enquiry Now</span>
             </div>
             <div class="mail-content">
@@ -1198,7 +1217,7 @@
         <div class="enquiry-box"
             onclick="window.open('https://api.whatsapp.com/send?phone=919990836740&amp;text=Hi!%20I%27m%20Interested%20In%20Namastey%20Homes')">
             <div class="mail-icon">
-                <img src="img/icons/whatsapp.svg" alt="">
+                <img src="img/icons/3.svg" alt="">
                 <span class="mobvsisec">Whatsapp Now</span>
             </div>
             <div class="mail-content">
