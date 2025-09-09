@@ -74,7 +74,7 @@
             display: flex;
             flex-wrap: wrap;
             gap: 20px;
-            /* spacing between columns */
+            /* spacing between items */
             list-style: none;
             padding: 0;
             margin: 0;
@@ -82,9 +82,17 @@
 
         .amenities li {
             flex: 1 1 calc(25% - 20px);
-            /* 4 columns */
+            /* 4 columns by default */
             box-sizing: border-box;
             text-align: center;
+        }
+
+        /* Responsive for mobile */
+        @media (max-width: 768px) {
+            .amenities li {
+                flex: 1 1 calc(50% - 20px);
+                /* 2 columns on mobile */
+            }
         }
 
         .carousel-container {
@@ -253,6 +261,28 @@
 
         #features-list .more-items {
             display: none;
+        }
+
+        .points {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            column-count: 2;
+            /* 2 columns by default */
+            column-gap: 30px;
+            /* space between columns */
+        }
+
+        .points li {
+            margin-bottom: 10px;
+        }
+
+        /* Responsive for mobile */
+        @media (max-width: 768px) {
+            .points {
+                column-count: 1;
+                /* 1 column on mobile */
+            }
         }
     </style>
 
@@ -436,12 +466,14 @@
                     Namastey Homes offers fully-furnished luxury serviced apartments in prime locations of South Delhi
                     and NCR, designed for both short and long stays. Ideal for corporates, expats, medical travelers,
                     and relocating families, our apartments provide the comfort of a home with the convenience of a
-                    hotel.<br>
-                    ✅ Fully Furnished & Equipped ✅ Prime Locations in Delhi & NCR<br>
-
-                    ✅ Short & Long Stay Options Available
-                    ✅ Personalized Concierge & Housekeeping
+                    hotel.
                 </p>
+                <ul class="points">
+                    <li>✅ Fully Furnished & Equipped</li>
+                    <li>✅ Prime Locations in Delhi & NCR</li>
+                    <li>✅ Short & Long Stay Options Available</li>
+                    <li>✅ Personalized Concierge & Housekeeping</li>
+                </ul>
             </div>
         </div>
     </section>
@@ -463,11 +495,11 @@
                             Find the best service apartments in South Delhi for rent, long stay, short stay, and more.
                         </p>
                         <ul id="features-list">
-                            <li>Service Apartments In South Delhi For Rent</li>
-                            <li>Service Apartments In South Delhi For Short Stay</li>
-                            <li>Service Apartments In South Delhi Near Airport</li>
-                            <li>Service Apartments In South Delhi For Long Stay</li>
-                            <li>Service Apartments Near Aiims Delhi</li>
+                            <li class="more-items">Service Apartments In South Delhi For Rent</li>
+                            <li class="more-items">Service Apartments In South Delhi For Short Stay</li>
+                            <li class="more-items">Service Apartments In South Delhi Near Airport</li>
+                            <li class="more-items">Service Apartments In South Delhi For Long Stay</li>
+                            <li class="more-items">Service Apartments Near Aiims Delhi</li>
                             <li class="more-items">Budget Service Apartments In Delhi</li>
                             <li class="more-items">Best Service Apartments In South Delhi</li>
                             <li class="more-items">2 BHK Service Apartments In South Delhi</li>
@@ -512,7 +544,7 @@
                         <button class="arrow right">&#10095;</button>
                     </div>
                     <br>
-                    
+
                     <div class="d-flex gap-2">
                         <button class="btn btncarerrrevers" data-toggle="modal" data-target="#onload-form"
                             data-backdrop="static" data-keyboard="false">1BHK – 80,000/ Month</button>
@@ -536,7 +568,7 @@
                         <button class="arrow right">&#10095;</button>
                     </div>
                     <br>
-                   
+
                     <div class="d-flex gap-2">
                         <button class="btn btncarerrrevers" data-toggle="modal" data-target="#onload-form"
                             data-backdrop="static" data-keyboard="false">2BHK – 1,40,000/ Month</button>
@@ -560,7 +592,7 @@
                         <button class="arrow right">&#10095;</button>
                     </div>
                     <br>
-                    
+
                     <div class="d-flex gap-2">
                         <button class="btn btncarerrrevers" data-toggle="modal" data-target="#onload-form"
                             data-backdrop="static" data-keyboard="false">3BHK – 2,00,000/ Month</button>
@@ -585,7 +617,7 @@
                         <button class="arrow right">&#10095;</button>
                     </div>
                     <br>
-                    
+
                     <div class="d-flex gap-2">
                         <button class="btn btncarerrrevers" data-toggle="modal" data-target="#onload-form"
                             data-backdrop="static" data-keyboard="false">1BHK – 80,000/ Month</button>
@@ -609,7 +641,7 @@
                         <button class="arrow right">&#10095;</button>
                     </div>
                     <br>
-                   
+
                     <div class="d-flex gap-2">
                         <button class="btn btncarerrrevers" data-toggle="modal" data-target="#onload-form"
                             data-backdrop="static" data-keyboard="false">2BHK – 1,40,000/ Month</button>
@@ -633,7 +665,7 @@
                         <button class="arrow right">&#10095;</button>
                     </div>
                     <br>
-                    
+
                     <div class="d-flex gap-2">
                         <button class="btn btncarerrrevers" data-toggle="modal" data-target="#onload-form"
                             data-backdrop="static" data-keyboard="false">3/4BHK – 2,00,000/ Month</button>
@@ -713,7 +745,7 @@
                         <div class="cta-content">
                             <div class="row">
                                 <div class="col-md-4 col-xs-12 m-auto">
-                                    <img src="img/3.jpg" style="width:100%;" alt="cta-image">
+                                    <img src="img/namastey_white.png" style="width:50%;" alt="cta-image">
                                 </div>
                                 <div class="col-md-8 col-xs-12" style="padding-top: 22px; color:#000;">
                                     <h3 class="mt-2 font-xl text-center text-weight">Receive A Digital Copy Of Our
@@ -1134,7 +1166,7 @@
     <!-- footer -->
     <div class="last" style="padding: 2rem 0;">
         <div class="container text-center">
-            <img src="img/namstey.png" width="15%" style="margin-bottom: 15px;">
+            <img src="img/namastey_white.png" width="15%" style="margin-bottom: 15px;">
 
             <p>
                 <a href="disclaimer.html" target="_blank"><b class="text-white">Disclaimer &amp; Privacy Policy</b></a>
